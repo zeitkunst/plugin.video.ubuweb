@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.ubuweb"
+       name="UbuWeb Video"
+       version="0.0.1"
+       provider-name="Nicholas Knouf">
+  <requires>
+    <import addon="xbmc.python"
+            version="2.0"/>
+    <import addon="script.module.beautifulsoup"
+            version="3.2.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">UbuWeb Video</summary>
+    <description lang="en">View items from UbuWeb's Film and Video collection (http://www.ubu.com/film/).</description>
+    <disclaimer>From the UbuWeb Film and Video homepage: "The following films are presented for educational and non-commercial use only. All copyrights belong to the artists."</disclaimer>
+  </extension>
+</addon>
