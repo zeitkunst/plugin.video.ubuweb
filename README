@@ -1,0 +1,18 @@
+plugin.video.ubuweb
+===================
+
+Nichols A. Knouf <nknouf@zeitkunst.org>
+http://zeitkunst.org
+
+A plugin that allows streaming of videos from the UbuWeb Film and Video Collection (http://ubuweb.com/film/).
+
+Note the following disclaimer from the UbuWeb site: "The following films are presented for educational and non-commercial use only. All copyrights belong to the artists."
+
+Released under the GPLv3.
+
+Improvements to the code are welcomed.
+
+NOTE
+----
+
+In order to reduce load on the UbuWeb server this plugin does not scrape the site directly, but rather downloads the database of film info from my own server at the following URL: http://zeitkunst.org/media/code/plugin.video.ubuweb/UbuWeb.db . It additionally checks that the database is up to date by accessing the following URL: http://zeitkunst.org/media/code/plugin.video.ubuweb/last_updated . The UbuWeb site is not updated continuously, making scraping of the site by every user of this plugin wasteful. The scraping code is contained within UbuWeb.py and can be run manually if necessary. Improvements to the scraping code are welcomed.
