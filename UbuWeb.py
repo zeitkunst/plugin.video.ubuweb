@@ -100,7 +100,7 @@ class UbuWebFilm(object):
             lastUpdated = float(data.strip())
 
             if (lastUpdated > self.getLastUpdated()):
-                print "Updating UbuWeb Film database"
+                print "Updating UbuWeb Film database from %s" % self.updateURL
                 self.getDB(self.dbURL)
 
     def getDB(self, dbURL):
